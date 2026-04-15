@@ -1,5 +1,5 @@
 using Domain.Entities;
-using application.Interfaces;
+using Application.Interfaces;
 namespace Persistence.Repositories;
 
 public class ProductRepository : IProductRepository

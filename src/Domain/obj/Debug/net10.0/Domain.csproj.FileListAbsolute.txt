@@ -9,3 +9,4 @@ C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Domain\obj\Debug\net10.0\Doma
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Domain\obj\Debug\net10.0\refint\Domain.dll
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Domain\obj\Debug\net10.0\Domain.pdb
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Domain\obj\Debug\net10.0\ref\Domain.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Domain\obj\Debug\net10.0\Domain.sourcelink.json

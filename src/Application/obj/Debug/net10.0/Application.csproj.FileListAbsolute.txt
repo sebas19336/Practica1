@@ -13,3 +13,4 @@ C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Application\obj\Debug\net10.0
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Application\obj\Debug\net10.0\refint\Application.dll
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Application\obj\Debug\net10.0\Application.pdb
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Application\obj\Debug\net10.0\ref\Application.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\src\Application\obj\Debug\net10.0\Application.sourcelink.json
