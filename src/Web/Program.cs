@@ -4,6 +4,7 @@ using Practica1.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddControllersWithViews();
 
 // Inyecci�n de dependencias
