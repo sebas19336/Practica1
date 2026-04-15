@@ -1,0 +1,16 @@
+@model List<Domain.Entities.Product>
+
+    <h2>Productos</h2>
+
+    <a href="/Product/Create">Crear</a>
+
+    <table>
+        @foreach(var p in Model)
+{
+        <tr>
+            <td>@p.Name</td>
+            <td>@p.Price</td>
+            <td><a href="/Product/Delete/@p.Id">Eliminar</a></td>
+        </tr>
+}
+    </table>
