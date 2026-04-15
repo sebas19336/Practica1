@@ -5,7 +5,12 @@ namespace Practica1.Persistence.Repositories;
 
 public class CategoryRepository : ICategoryRepository
 {
-    private static List<Category> _categories = new List<Category>();
+    private static List<Category> _categories = new List<Category>
+{
+    new Category { Id = 1, Name = "Tecnología" },
+    new Category { Id = 2, Name = "Alimentos" },
+    new Category { Id = 3, Name = "Ropa" }
+};
 
     public IEnumerable<Category> GetAll()
     {

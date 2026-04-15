@@ -1,18 +1,37 @@
 @model List<Practica1.Domain.Entities.Product>
+@using Practica1.Domain.Entities
 
-    <h2>Productos</h2>
+<h2>Productos</h2>
 
-    <a href="/Product/Create">Crear</a>
+<a href="/Product/Create">Crear</a>
 
-    <table>
-        @foreach(var p in Model)
-{
-    <a href="/Product/Delete/@p.Id">Eliminar</a>
-    <a href="/Product/Edit/@p.Id">Editar</a>
-        <tr>
-            <td>@p.Name</td>
-            <td>@p.Price</td>
-            <td><a href="/Product/Delete/@p.Id">Eliminar</a></td>
-        </tr>
+@{
+    var categories = ViewBag.Categories as List<Category> ?? new List<Category>();
 }
-    </table>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var p in Model)
+        {
+            var category = categories?.FirstOrDefault(c => c.Id == p.CategoryId);
+            <tr>
+                <td>@p.Name</td>
+                <td>@p.Price</td>
+                <td>@category?.Name</td>
+                <td>
+                    <a href="/Product/Edit/@p.Id">Editar</a>
+                    <a href="/Product/Delete/@p.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -34,6 +34,9 @@ namespace Web.Controllers
         public IActionResult Index()
         {
             var products = _repo.GetAll();
+
+            ViewBag.Categories = _categoryRepo.GetAll(); // 👈 ESTA LÍNEA ES LA CLAVE
+
             return View(products);
         }
 
