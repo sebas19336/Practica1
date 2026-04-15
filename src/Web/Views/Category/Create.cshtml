@@ -1,0 +1,12 @@
+@model IEnumerable<Practica1.Domain.Entities.Category>
+
+<h2>Categorías</h2>
+
+<a href="/Category/Create">Crear nueva</a>
+
+@foreach (var c in Model)
+{
+    <div>
+        @c.Name
+    </div>
+}

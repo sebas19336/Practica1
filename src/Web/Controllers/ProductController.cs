@@ -7,15 +7,18 @@ namespace Web.Controllers
     public class ProductController : Controller
     {
         private readonly IProductRepository _repo;
+        private readonly ICategoryRepository _categoryRepo;
 
-        public ProductController(IProductRepository repo)
+        public ProductController(IProductRepository repo, ICategoryRepository categoryRepo)
         {
-            _repo = repo;
+        _repo = repo;
+        _categoryRepo = categoryRepo;
         }
 
         // 👉 GET: muestra el formulario
         public IActionResult Create()
         {
+            ViewBag.Categories = _categoryRepo.GetAll();
             return View();
         }
 
@@ -31,12 +34,16 @@ namespace Web.Controllers
         public IActionResult Index()
         {
             var products = _repo.GetAll();
+
+            ViewBag.Categories = _categoryRepo.GetAll(); // 👈 ESTA LÍNEA ES LA CLAVE
+
             return View(products);
         }
 
         public IActionResult Edit(int id)
         {
             var product = _repo.GetById(id);
+            ViewBag.Categories = _categoryRepo.GetAll();
             return View(product);
         }
 
