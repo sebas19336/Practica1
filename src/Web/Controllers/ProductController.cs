@@ -1,33 +1,65 @@
 using Microsoft.AspNetCore.Mvc;
-using Application.Services;
-using Domain.Entities;
+using Practica1.Application.Interfaces;
+using Practica1.Domain.Entities;
 
-public class ProductController : Controller
+namespace Web.Controllers
 {
-	private readonly ProductService _service;
+    public class ProductController : Controller
+    {
+        private readonly IProductRepository _repo;
 
-	public ProductController(ProductService service)
-	{
-		_service = service;
-	}
+        public ProductController(IProductRepository repo)
+        {
+            _repo = repo;
+        }
 
-	public IActionResult Index()
-	{
-		return View(_service.GetAll());
-	}
+        // 👉 GET: muestra el formulario
+        public IActionResult Create()
+        {
+            return View();
+        }
 
-	public IActionResult Create() => View();
+        // 👉 POST: guarda el producto
+        [HttpPost]
+        public IActionResult Create(Product product)
+        {
+            _repo.Add(product);
+            return RedirectToAction("Index");
+        }
 
-	[HttpPost]
-	public IActionResult Create(Product p)
-	{
-		_service.Create(p);
-		return RedirectToAction("Index");
-	}
+        // 👉 Lista productos
+        public IActionResult Index()
+        {
+            var products = _repo.GetAll();
+            return View(products);
+        }
 
-	public IActionResult Delete(int id)
-	{
-		_service.Delete(id);
-		return RedirectToAction("Index");
-	}
+        public IActionResult Edit(int id)
+        {
+            var product = _repo.GetById(id);
+            return View(product);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Product product)
+        {
+            _repo.Update(product);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(int id)
+        {
+        var product = _repo.GetById(id);
+        return View(product);
+        }   
+
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            _repo.Delete(id);
+            return RedirectToAction("Index");
+        }
+
+    }
+
 }

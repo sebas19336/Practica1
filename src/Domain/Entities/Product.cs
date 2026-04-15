@@ -1,4 +1,4 @@
-namespace Domain.Entities;
+namespace Practica1.Domain.Entities;
 
 public class Product
 {

@@ -1,0 +1,19 @@
+@model Practica1.Domain.Entities.Product
+
+<h2>Editar Producto</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label>Nombre</label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label>Precio</label>
+        <input asp-for="Price" />
+    </div>
+
+    <button type="submit">Actualizar</button>
+</form>

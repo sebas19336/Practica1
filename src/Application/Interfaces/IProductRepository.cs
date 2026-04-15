@@ -1,6 +1,6 @@
-using Domain.Entities;
-using Application.Interfaces;
-namespace Application.Interfaces;
+using Practica1.Domain.Entities;
+using Practica1.Application.Interfaces;
+namespace Practica1.Application.Interfaces;
 
 public interface IProductRepository
 {
