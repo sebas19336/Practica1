@@ -1,4 +1,4 @@
-@model List<Domain.Entities.Product>
+@model List<Practica1.Domain.Entities.Product>
 
     <h2>Productos</h2>
 
@@ -7,6 +7,8 @@
     <table>
         @foreach(var p in Model)
 {
+    <a href="/Product/Delete/@p.Id">Eliminar</a>
+    <a href="/Product/Edit/@p.Id">Editar</a>
         <tr>
             <td>@p.Name</td>
             <td>@p.Price</td>

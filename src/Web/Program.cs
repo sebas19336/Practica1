@@ -1,12 +1,12 @@
-using Application.Services;
-using Application.Interfaces;
-using Persistence.Repositories;
+using Practica1.Application.Services;
+using Practica1.Application.Interfaces;
+using Practica1.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-// Inyección de dependencias
+// Inyecciï¿½n de dependencias
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ProductService>();
 

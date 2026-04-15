@@ -1,6 +1,6 @@
-using Domain.Entities;
-using Application.Interfaces;
-namespace Persistence.Repositories;
+using Practica1.Domain.Entities;
+using Practica1.Application.Interfaces;
+namespace Practica1.Persistence.Repositories;
 
 public class ProductRepository : IProductRepository
 {
