@@ -1,37 +1,67 @@
 @model List<Practica1.Domain.Entities.Product>
 @using Practica1.Domain.Entities
 
-<h2>Productos</h2>
-
-<a href="/Product/Create">Crear</a>
-
 @{
     var categories = ViewBag.Categories as List<Category> ?? new List<Category>();
 }
 
-<table>
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Categoría</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">📦 Productos</h4>
+            <a href="/Product/Create" class="btn btn-light btn-sm fw-semibold">
+                + Crear Producto
+            </a>
+        </div>
+        <div class="card-body p-0">
 
-    <tbody>
-        @foreach (var p in Model)
-        {
-            var category = categories?.FirstOrDefault(c => c.Id == p.CategoryId);
-            <tr>
-                <td>@p.Name</td>
-                <td>@p.Price</td>
-                <td>@category?.Name</td>
-                <td>
-                    <a href="/Product/Edit/@p.Id">Editar</a>
-                    <a href="/Product/Delete/@p.Id">Eliminar</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+            @if (!Model.Any())
+            {
+                <div class="text-center text-muted py-5">
+                    <p class="fs-5">No hay productos registrados.</p>
+                    <a href="/Product/Create" class="btn btn-primary">Crear el primero</a>
+                </div>
+            }
+            else
+            {
+                <table class="table table-hover table-striped mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Categoría</th>
+                            <th class="text-center">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var p in Model)
+                        {
+                            var category = categories.FirstOrDefault(c => c.Id == p.CategoryId);
+                            <tr>
+                                <td class="fw-semibold">@p.Name</td>
+                                <td class="text-success fw-bold">$@p.Price</td>
+                                <td>
+                                    <span class="badge bg-secondary">@(category?.Name ?? "Sin categoría")</span>
+                                </td>
+                                <td class="text-center">
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <a href="/Product/Edit/@p.Id" class="btn btn-outline-warning">
+                                            ✏️ Editar
+                                        </a>
+                                        <a href="/Product/Delete/@p.Id" class="btn btn-outline-danger">
+                                            🗑️ Eliminar
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+
+        </div>
+        <div class="card-footer text-muted small">
+            Total: <strong>@Model.Count</strong> producto(s)
+        </div>
+    </div>
+</div>

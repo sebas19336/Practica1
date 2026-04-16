@@ -1,28 +1,52 @@
 @model Practica1.Domain.Entities.Product
 
-<h2>Editar Producto</h2>
+<div class="container mt-4" style="max-width: 500px;">
+    <div class="card shadow-sm border-warning">
+        <div class="card-header bg-warning text-dark">
+            <h4 class="mb-0">✏️ Editar Producto</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
 
-<form asp-action="Edit" method="post">
-    <input type="hidden" asp-for="Id" />
+                <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
 
-    <div>
-        <label>Nombre</label>
-        <input asp-for="Name" />
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label fw-semibold">Nombre</label>
+                    <input asp-for="Name" class="form-control" placeholder="Nombre del producto" />
+                    <span asp-validation-for="Name" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Price" class="form-label fw-semibold">Precio</label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input asp-for="Price" class="form-control" placeholder="0.00" />
+                    </div>
+                    <span asp-validation-for="Price" class="text-danger small"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="CategoryId" class="form-label fw-semibold">Categoría</label>
+                    <select asp-for="CategoryId" class="form-select">
+                        <option value="">-- Selecciona una categoría --</option>
+                        @foreach (var c in ViewBag.Categories)
+                        {
+                            <option value="@c.Id">@c.Id - @c.Name</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="btn-group d-flex" role="group">
+                    <button type="submit" class="btn btn-warning w-100">
+                        💾 Actualizar
+                    </button>
+                    <a asp-action="Index" class="btn btn-outline-secondary w-100">
+                        Cancelar
+                    </a>
+                </div>
+
+            </form>
+        </div>
     </div>
-
-    <div>
-        <label>Precio</label>
-        <input asp-for="Price" />
-    </div>
-
-    <div>
-    <label>Categoría</label>
-    <select asp-for="CategoryId">
-        @foreach (var c in ViewBag.Categories)
-        {
-            <option value="@c.Id">@c.Id - @c.Name</option>
-        }
-    </select>
-    </div>
-    <button type="submit">Actualizar</button>
-</form>
+</div>
