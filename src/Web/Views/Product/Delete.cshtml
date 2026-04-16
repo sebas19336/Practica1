@@ -1,14 +1,36 @@
 @model Practica1.Domain.Entities.Product
 
-<h2>Eliminar Producto</h2>
+<div class="max-w-lg mx-auto">
+    <div class="bg-white rounded-2xl shadow overflow-hidden">
+        <div class="bg-red-600 text-white px-6 py-4">
+            <h4 class="text-xl font-semibold">🗑️ Eliminar Producto</h4>
+        </div>
+        <div class="p-6 space-y-4">
 
-<p>¿Seguro que quieres eliminar este producto?</p>
+            <div class="bg-yellow-50 border border-yellow-300 text-yellow-800 rounded-lg px-4 py-3 text-sm flex gap-2 items-start">
+                <span>⚠️</span>
+                <span>¿Seguro que quieres eliminar este producto? Esta acción no se puede deshacer.</span>
+            </div>
 
-<div>
-    <strong>@Model.Name</strong> - $@Model.Price
+            <div class="bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 flex items-center justify-between">
+                <span class="font-semibold text-gray-800 text-lg">@Model.Name</span>
+                <span class="text-green-600 font-bold">$@Model.Price</span>
+            </div>
+
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="Id" />
+                <div class="flex gap-2 pt-2">
+                    <button type="submit"
+                            class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 rounded-lg transition">
+                        🗑️ Eliminar
+                    </button>
+                    <a asp-action="Index"
+                       class="w-full text-center border border-gray-300 hover:bg-gray-100 text-gray-600 font-semibold py-2 rounded-lg transition">
+                        Cancelar
+                    </a>
+                </div>
+            </form>
+
+        </div>
+    </div>
 </div>
-
-<form asp-action="Delete" method="post">
-    <input type="hidden" asp-for="Id" />
-    <button type="submit">Eliminar</button>
-</form>

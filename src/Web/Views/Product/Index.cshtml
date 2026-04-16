@@ -1,37 +1,72 @@
 @model List<Practica1.Domain.Entities.Product>
 @using Practica1.Domain.Entities
 
-<h2>Productos</h2>
-
-<a href="/Product/Create">Crear</a>
-
 @{
     var categories = ViewBag.Categories as List<Category> ?? new List<Category>();
 }
 
-<table>
-    <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Precio</th>
-            <th>Categoría</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
+<div class="bg-white rounded-2xl shadow overflow-hidden">
+    <div class="bg-blue-600 text-white px-6 py-4 flex items-center justify-between">
+        <h4 class="text-xl font-semibold">📦 Productos</h4>
+        <a href="/Product/Create"
+           class="bg-white text-blue-600 hover:bg-blue-50 font-semibold text-sm px-4 py-2 rounded-lg transition">
+            + Crear Producto
+        </a>
+    </div>
 
-    <tbody>
-        @foreach (var p in Model)
-        {
-            var category = categories?.FirstOrDefault(c => c.Id == p.CategoryId);
-            <tr>
-                <td>@p.Name</td>
-                <td>@p.Price</td>
-                <td>@category?.Name</td>
-                <td>
-                    <a href="/Product/Edit/@p.Id">Editar</a>
-                    <a href="/Product/Delete/@p.Id">Eliminar</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+    @if (!Model.Any())
+    {
+        <div class="text-center text-gray-400 py-16">
+            <p class="text-lg mb-4">No hay productos registrados.</p>
+            <a href="/Product/Create"
+               class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition">
+                Crear el primero
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left">
+                <thead class="bg-gray-800 text-white text-xs uppercase">
+                    <tr>
+                        <th class="px-6 py-3">Nombre</th>
+                        <th class="px-6 py-3">Precio</th>
+                        <th class="px-6 py-3">Categoría</th>
+                        <th class="px-6 py-3 text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    @foreach (var p in Model)
+                    {
+                        var category = categories.FirstOrDefault(c => c.Id == p.CategoryId);
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-3 font-semibold text-gray-800">@p.Name</td>
+                            <td class="px-6 py-3 text-green-600 font-bold">$@p.Price</td>
+                            <td class="px-6 py-3">
+                                <span class="bg-gray-200 text-gray-700 text-xs font-medium px-2 py-1 rounded-full">
+                                    @(category?.Name ?? "Sin categoría")
+                                </span>
+                            </td>
+                            <td class="px-6 py-3 text-center">
+                                <div class="flex justify-center gap-2">
+                                    <a href="/Product/Edit/@p.Id"
+                                       class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-lg transition">
+                                        ✏️ Editar
+                                    </a>
+                                    <a href="/Product/Delete/@p.Id"
+                                       class="bg-red-500 hover:bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-lg transition">
+                                        🗑️ Eliminar
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="px-6 py-3 bg-gray-50 border-t text-sm text-gray-500">
+            Total: <strong>@Model.Count</strong> producto(s)
+        </div>
+    }
+</div>
