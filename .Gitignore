@@ -1,0 +1,51 @@
+## Ignorar carpetas de compilación
+bin/
+obj/
+
+## Ignorar bin/ y obj/ en cualquier subcarpeta (incluye MVC)
+**/bin/
+**/obj/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Archivos de compilación
+*.dll
+*.exe
+*.pdb
+
+## Logs
+*.log
+
+## Archivos temporales
+*.tmp
+*.temp
+
+## Paquetes NuGet
+packages/
+*.nupkg
+*.snupkg
+
+## Rider / VS Code
+.idea/
+.vscode/
+
+## Archivos de publicación
+publish/
+
+## Archivos de IIS Express
+iisexpress/
+
+## Configuración local (opcional)
+appsettings.Development.json
+
+## Archivos generados automáticamente
+Generated_Code/
+
+## Ignorar específicamente bin dentro de carpeta MVC (opcional más explícito)
+MiProyectoMVC/bin/
+MiProyectoMVC/obj/
