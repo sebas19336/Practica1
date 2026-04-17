@@ -12,14 +12,14 @@ namespace Web.Controllers
         private readonly ProductService _service;
 
         public ProductController(
-    IProductRepository repo,
-    ICategoryRepository categoryRepo,
+        IProductRepository repo,
+        ICategoryRepository categoryRepo,
         ProductService service)
-            {
-                _repo = repo;
-                _categoryRepo = categoryRepo;
-                _service = service;
-            }
+        {
+            _repo = repo;
+            _categoryRepo = categoryRepo;
+            _service = service;
+        }
 
         // - GET: muestra el formulario
         public IActionResult Create()
@@ -75,9 +75,9 @@ namespace Web.Controllers
 
         public IActionResult Delete(int id)
         {
-        var product = _repo.GetById(id);
-        return View(product);
-        }   
+            var product = _repo.GetById(id);
+            return View(product);
+        }
 
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)

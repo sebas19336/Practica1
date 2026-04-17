@@ -1,0 +1,12 @@
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/bin/Debug/net10.0/Domain.deps.json
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/bin/Debug/net10.0/Domain.dll
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/bin/Debug/net10.0/Domain.pdb
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/Domain.AssemblyInfoInputs.cache
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/Domain.AssemblyInfo.cs
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/Domain.csproj.CoreCompileInputs.cache
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/Domain.sourcelink.json
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/Domain.dll
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/refint/Domain.dll
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/Domain.pdb
+/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/Debug/net10.0/ref/Domain.dll

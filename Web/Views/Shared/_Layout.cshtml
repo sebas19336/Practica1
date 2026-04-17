@@ -5,24 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Web</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
     <header class="bg-white shadow mb-6">
-        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <nav class="flex items-center justify-between px-6 py-4" aria-label="main menu">
+
+            <!-- Brand -->
             <a asp-area="" asp-controller="Home" asp-action="Index"
-               class="text-xl font-bold text-blue-600 hover:text-blue-800">
-                🏠 Web
+               class="text-2xl font-bold text-gray-800">
+                🏠 <span>Pro<span class="text-blue-600">duc</span>tos</span>
             </a>
-            <nav class="flex gap-6">
-                <a asp-area="" asp-controller="Home" asp-action="Index"
-                   class="text-gray-600 hover:text-blue-600 font-medium transition">Home</a>
-                <a asp-area="" asp-controller="Home" asp-action="Privacy"
-                   class="text-gray-600 hover:text-blue-600 font-medium transition">Privacy</a>
-                <a asp-area="" asp-controller="Product" asp-action="Index"
-                   class="text-gray-600 hover:text-blue-600 font-medium transition">Productos</a>
-            </nav>
-        </div>
+
+            <!-- Desktop Menu (siempre visible) -->
+            <ul class="flex items-center gap-4">
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"
+                       class="font-medium text-gray-600 hover:text-blue-600 underline-offset-2 focus:outline-none focus:underline transition">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Product" asp-action="Index"
+                       class="font-medium text-gray-600 hover:text-blue-600 underline-offset-2 focus:outline-none focus:underline transition">
+                        Productos
+                    </a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy"
+                       class="font-medium text-gray-600 hover:text-blue-600 underline-offset-2 focus:outline-none focus:underline transition">
+                        Privacy
+                    </a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Product" asp-action="Create"
+                       class="rounded-lg bg-blue-600 border border-blue-600 px-4 py-2 text-sm font-medium text-white hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition">
+                        + Crear Producto
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
     </header>
 
     <main class="container mx-auto px-4 flex-grow pb-6">
