@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Persistence/Persistence.csproj": {}
+    "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Application/Application.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Application/Application.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Application/Application.csproj",
-        "packagesPath": "/home/alejo/.nuget/packages/",
-        "outputPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Application/obj/",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/alejo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/Domain.csproj": {
-                "projectPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/Domain.csproj"
+              "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Domain\\Domain.csproj"
               }
             }
           }
@@ -42,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -63,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -341,22 +347,28 @@
         }
       }
     },
-    "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/Domain.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/Domain.csproj",
-        "packagesPath": "/home/alejo/.nuget/packages/",
-        "outputPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/obj/",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/alejo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -375,7 +387,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -396,7 +408,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -674,33 +686,39 @@
         }
       }
     },
-    "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Persistence/Persistence.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Persistence/Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Persistence/Persistence.csproj",
-        "packagesPath": "/home/alejo/.nuget/packages/",
-        "outputPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Persistence/obj/",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/alejo/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Application/Application.csproj": {
-                "projectPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Application/Application.csproj"
+              "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Application\\Application.csproj"
               },
-              "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/Domain.csproj": {
-                "projectPath": "/home/alejo/Documentos/ProyectosU/Practica/Practica1/Domain/Domain.csproj"
+              "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Nueva carpeta\\Practica1\\Domain\\Domain.csproj"
               }
             }
           }
@@ -715,7 +733,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -736,7 +754,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.202/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
