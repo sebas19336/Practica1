@@ -1,0 +1,16 @@
+# Build outputs
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+.vs/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+
+# Dependencies
+packages/
