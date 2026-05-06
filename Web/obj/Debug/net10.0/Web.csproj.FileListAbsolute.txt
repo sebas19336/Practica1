@@ -315,3 +315,14 @@ C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\refint\Web.
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\Web.pdb
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\Web.genruntimeconfig.cache
 C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\ref\Web.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\bin\Debug\net10.0\AspNetCoreHero.ToastNotification.Views.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\bin\Debug\net10.0\AspNetCoreHero.ToastNotification.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\compressed\kitxt44sfd-{0}-db3tgp313k-db3tgp313k.gz
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\compressed\o0jjhyzspa-{0}-cm79lz9ti0-cm79lz9ti0.gz
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\compressed\wdcg9ucorr-{0}-w5t26togf2-w5t26togf2.gz
+C:\Users\sebas\Desktop\Nueva carpeta\Practica1\Web\obj\Debug\net10.0\compressed\9op22eqad8-{0}-cl5rrypo7e-cl5rrypo7e.gz
