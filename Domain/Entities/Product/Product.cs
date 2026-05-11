@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace Practica1.Domain.Entities;
+namespace Practica1.Domain.Entities.Product;
 public class Product
 {
     public int Id { get; set; }
@@ -9,4 +9,5 @@ public class Product
     public decimal Price { get; set; }
 
     public int CategoryId { get; set; }
+
 }

@@ -1,4 +1,4 @@
-namespace Practica1.Domain.Entities;
+namespace Practica1.Domain.Entities.Category;
 
 public class Category
 {
